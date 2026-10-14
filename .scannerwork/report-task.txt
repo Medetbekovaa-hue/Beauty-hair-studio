@@ -1,0 +1,6 @@
+projectKey=beauty-hair-studio
+serverUrl=http://localhost:9000
+serverVersion=26.9.0.129388
+dashboardUrl=http://localhost:9000/dashboard?id=beauty-hair-studio
+ceTaskId=c866e89a-5d29-4bad-84e8-15dde780b378
+ceTaskUrl=http://localhost:9000/api/ce/task?id=c866e89a-5d29-4bad-84e8-15dde780b378
