@@ -70,3 +70,5 @@ jobs:
           tags: |
             ://amazonaws.com
             ://amazonaws.com{{ github.sha }}
+
+#trigger ecr push
