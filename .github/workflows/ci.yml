@@ -1,8 +1,16 @@
-name: CI/CD Pipeline
+name: CI-CD-Pipeline
 
 on:
   push:
-    branches: [ main, master ]
+    branches:
+      - main
+      - master
+      - feature-beauty
+  pull_request:
+    branches:
+      - main
+      - master
+      - feature-beauty
 
 jobs:
   test_and_lint:
@@ -30,7 +38,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: http://18.219.133.226:9000
 
-      - name: Run Trivy vulnerability scanner
+      - name: Run Trivy scanner
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
